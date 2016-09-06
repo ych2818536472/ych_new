@@ -1,0 +1,183 @@
+/* CSS Document */
+/*------------------------此页面为公共样式表----------------------*/
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; } 
+fieldset, img { border:0; } 
+img{display: block;} 
+address, caption, cite, code, dfn, th, var { font-style:normal; font-weight:normal; } 
+ul, ol { list-style:none; } 
+body { color:#333;font:12px/20px "SimSun","宋体","Arial Narrow",HELVETICA; background:#fff;/* overflow-y:scroll;*/ overflow-x:hidden;}
+a { color:#333; text-decoration:none; }
+input{border:0;outline: none;}
+button{border:0;outline: none;}
+.fl{float:left;}
+.fr{ float:right;}
+.border0{ border:0;}
+.cl{clear:both;}
+.bl{ color:#000;}
+/*---------------------以上部分为样式重置-------------------------*/
+/*图标部分的样式*/
+@font-face {font-family: 'iconfont';
+    src: url('iconfont.eot'); /* IE9*/
+    src: url('iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('iconfont.woff') format('woff'), /* chrome、firefox */
+    url('iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{font-family:"iconfont" !important;font-size:16px;font-style:normal;-webkit-font-smoothing: antialiased;-webkit-text-stroke-width: 0.2px;-moz-osx-font-smoothing: grayscale;vertical-align: middle;-webkit-font-smoothing: antialiased;}
+/*end*/
+
+#topcon,#focusPic,#noticeBar,#topBar,#topNavcon,#indexcon,.banner1con,.footerbottom{width:1200px;margin: 0 auto;}
+
+/*----------------------------index start---------------------------------*/
+/*----------------------------top---------------------------------*/
+#top{background:#f7f7f7;height: 32px;}
+#topcon{height: 32px;line-height: 32px;;}
+.topleft{width: 88px;height: 32px;color:#656565;}
+.topleft span{text-align:center;width:88px;display:inline-block;height: 32px;cursor:pointer;}
+.topleft:hover{background-color: #fff;color:#C40000;}
+.topright{width: 730px;height: 31px;}
+.topright_nav li{float: left;line-height:32px;text-align:center;}
+.topright_nav .fors{padding: 0 20px;}
+.topright_nav li a{float: left;color: #656565;}
+.topright_nav .line{width: 1px;height:12px;background:#ddd;margin-top:9px;}
+.topright_nav .blue{color:#0066cb;}
+.topright_nav .tel{font-size: 16px;font-style: italic;color:#C40000;}
+.droplist{position: relative;width:59px;height:32px;padding-left:10px;}
+.fixedTopBar_dropList{position: absolute;left: 0;top:0;padding:0 20px;z-index: 999;text-align: center;padding: 0 10px;margin:0 5px;}
+.dropBox_hideList{display: none;}
+.dropBox_hideList a{display: block;width: 64px;height: 32px;}
+.fixedTopBar_dropList:hover{background-color: #fff;border: 1px solid #ddd;}
+.fixedTopBar_dropList:hover .dropBox_hideList{display: block;}
+.fixedTopBar_dropList a:hover{color:#c40000;}
+.fixedTopBar_dropList:hover .down{
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.fixedTopBar_dropList li{text-align: center;}
+/*----------------------------focusPic顶部大广告------------------------*/
+#focusPic{height: 80px;position: relative;}
+.focusPic_close {position: absolute; right: 0; top: 0; width: 18px; height: 38px; text-align: center; background: #666; color: #fff; z-index: 10; cursor:pointer; } 
+#focusPic img{position: absolute;bottom: 0;}
+/*----------------------------noticeBar---------------------------------*/
+#noticeBar{width: 1178px;height: 26px;border:1px solid #e4debc;line-height: 26px;padding:0 10px;background-color: #fff7d2;}
+#noticeBar a{margin-left: 5px;color:#99999b;}
+#noticeBar span{cursor: pointer;color: #dccf9a;}
+
+/*----------------------------topBar---------------------------------*/
+#topBar{height:65px;padding:34px 0 21px;}
+.logo{width: 220px;}
+.topBar_searchBox{width: 547px;;padding-left:47px;height: 65px;}
+.search{width: 448px;height: 33px;border:3px solid #c30101;font-size:14px;text-indent: 10px;padding: 0;}
+.searchBtn{width: 86px;height: 39px;background-color:#c30101;cursor: pointer;font-size: 16px;font-family: "Microsoft Yahei";color:#fff;}
+.topBar_cart{background: rgb(249, 249, 249) none repeat scroll 0% 0%;width: 139px;height: 34px;border:1px solid #e0e0e0;line-height:34px;text-align: center;position: relative;}
+.topBar_cart i{color:#c40000;}
+.topBar_cart a{color:#333;}
+.arrow{font: 400 13px/13px simsun;}
+.topBar_count{position: absolute;left:105px;top:-4px;background-color:#c40000;color:#fff;border-radius: 7px 7px 7px 0;text-align: center;display: inline-block;padding: 1px 2px;font-size: 12px;line-height: 12px;min-width: 12px;}
+.topBar_tags{padding-top:9px;}
+.topBar_tags a{display: inline-block;height: 18px;line-height: 18px;color:#c40000;border-right:1px solid #ccc;padding: 0 9px;}
+.topBar_tags .border0{border: 0;}
+
+/*----------------------------topNav---------------------------------*/
+#topNav{border-bottom: 2px solid rgb(196, 0, 0);}
+#topNavcon{height:37px;}
+.navBar_dt{width: 210px;height: 37px;line-height: 37px;text-align: center;background:#ba000d;font-weight: 500;color:#fff;font-size:16px;font-family: "Microsoft Yahei";}
+
+.navBar_items li{height:37px;line-height:37px;float: left;padding:0 24px;font-family: "Microsoft Yahei";font-size:16px;position: relative;}
+.navBar_items li a{float: left;font-weight: bold;color: #333;}
+.navBar_items li a:hover{color:#c40000;}
+.navBar_items .active{color:#c40000;}
+.navBar_items .navBar_tip{color:#fff;background-color: #c40000;position: absolute;top:0px;right: -1px;width:26px;height:14px;border-radius:3px;line-height: 14px;text-align: center;}
+/*----------------------------indexcon---------------------------------*/
+#indexcon{min-height:300px;height:auto!important;height:300px;}
+#indexcon:after{content:".";display:block;height:0;clear:both;overflow:hidden;visibility:hidden;}
+/*----------------------------indexcon ends---------------------------------*/
+
+
+/*----------------------------footer---------------------------------*/
+#footer{}
+.footermid{height:343px;background:url(../img/footer_Bg.gif) left top repeat;box-shadow: inset 0 1px 3px rgba(0,0,0,0.7);}
+.footermidcon{width:1150px;height:343px;margin:0 auto;}
+.footermid_contop{width: 1150px;height:113px;padding-top: 7px;border-bottom: 2px solid #787878;}
+.footer_tel{background:url(../img/tel.png) left top no-repeat;margin-top: 20px;width: 301px;height: 75px;}
+.footer_ser{margin:61px 0 0 30px;}
+.qrCodeBox{width: 307px;height: 120px;color:#fff;}
+.qrCodeBox p{width:182px;height:98px;text-align: right;padding:22px 21px 0 0;}
+.footer_qrCode{width: 104px;}
+.footerlink{padding: 40px 0 0 100px;}
+.footerlink dl{width: 171px;float: left;}
+
+.footerlink dt a{font-size: 14px;color:#fff;font-weight: bold;display: block;height: 26px;}
+.footerlink dd a{line-height: 24px;color:#a9a9a9;}
+.footerlink dl .yellow{color:#ffff09;}
+.footerbottom{height: 165px;background:url(../img/footertop.jpg) left top no-repeat;}
+.footerbottom p{height:106px;text-align: center;color:#6b6b6b;font: 12px/150% Arial,Verdana,"\5b8b\4f53";line-height:190px;}
+.authentication{padding-top:11px;text-align: center;padding-left: 485px;}
+.authentication a{background:url(../img/footerbo.jpg) 0 0 no-repeat;width: 110px;height: 48px;display:inline-block;float:left;}
+.authentication .fbright{margin-left: 10px;}
+.authentication .fbright{background-position:-120px 0;}
+/*----------------------------index end---------------------------------*/
+
+
+
+/*----------------------------login---------------------------------*/
+/*----------------------------login-header---------------------------------*/
+.login_headercon,.logincon_main{width: 980px;margin: 0 auto;}
+
+#login_header{border-bottom:1px solid #c5c5c5;background-color: #fff;}
+.login_headercon{height:69px;padding-top:20px;}
+.login_line{padding-top:18px;color:#000;}
+.login_line i{display: inline-block;background: url(../img/loginIcon.gif) -1px -1px no-repeat;width: 17px;height: 17px;margin-top:-5px;vertical-align: middle;}
+.login_line a{margin-right: 36px;}
+.login_line a:last-child{margin-right: 10px;}
+.login_line .service{background-position:-25px -1px;}
+.login_line a{color:#2e2e2e;}
+.login_line .red{color:#cf0404;}
+/*----------------------------login-logincon---------------------------------*/
+@keyframes bg
+{
+	0%   {background-position:0 0; }
+	
+	100% {background-position:-1000px -1000px;}
+}
+
+@-moz-keyframes bg /* Firefox */
+{
+	0%   {background-position:0 0;  }
+	
+	100% {background-position:-1000px -1000px; }
+}
+
+@-webkit-keyframes bg /* Safari and Chrome */
+{
+	0%   {background-position:0 0; }
+	
+	100% {background-position:-1000px -1000px;}
+}
+@-ms-keyframes bg /* Safari and Chrome */
+{
+	0%   {background-position:0 0; }
+	
+	100% {background-position:-1000px -1000px;}
+}
+@-o-keyframes bg /* Safari and Chrome */
+{
+	0%   {background-position:0 0; }
+	
+	100% {background-position:-1000px -1000px;}
+}
+
+#logincon{}
+/*页面高度自适*/
+.logincon_main:after{content:".";display:block;height:0;clear:both;overflow:hidden;visibility:hidden;}
+.logincon_main{min-height:300px;height:auto!important;height:300px;width: 980px;}
+
+.login_footer{text-align: center;line-height:22px;color:#000;}
+.login_footer a{color:#333;}
+.login_footer a:hover {color: #c40000;}
+
+/*----------------------------login end---------------------------------*/
+
